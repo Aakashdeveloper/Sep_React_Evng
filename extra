@@ -1,0 +1,175 @@
+https://code.visualstudio.com/
+https://nodejs.org/en/
+https://github.com/
+https://github.com/Aakashdeveloper/Sep_React_Evng
+
+
+React 
+////////////////////////////
+JavaScript Framework to build single page application
+
+npm
+>node package manager
+
+package.json
+> starting point of application
+> meta data
+> packages 
+> scripts
+
+JSON>
+JavaScript Object Notation
+Way to represent data in key value pair
+[
+    {
+        "name":"john",
+        "class":"UI"
+    },
+    {
+        "name":"Alvin",
+        "class":"Node"
+    }
+]
+
+//////////////////////////////////
+Step To generate package.json
+//////////////////////////////////
+**NodeJs must be installed in system.
+> naviagte to folder uisng terminal/cmd
+> npm init
+> Answer all question
+> Type "yes"
+
+
+//////////////////////////////////
+Local package > local to folder
+Global package > will install in your system 
+                > They will not add in package.json
+                > They are only use to generate application
+                > We will install only once and generate
+                n number of time
+                > We need admin permission to install
+///////////////////////
+
+localpackage
+> naviagte to folder uisng terminal/cmd
+> npm i packagename
+
+react
+react-dom
+react-scripts
+
+
+///////////////////Step to install gLobal Packges///////////////////
+Window
+> open cmd as admin
+> npm i -g create-react-app 
+
+Mac/Linux
+> open terminal
+> sudo npm i -g create-react-app 
+
+///////////////////Step to setup react app///////////////////
+>>>>OnLy First Time<<<<<
+Window
+> open cmd as admin
+> npm i -g create-react-app 
+
+>>>>>Every Time when you want new app<<<<<<<<<<<<<
+> go inside the folder where you want to generate
+> create-react-app appname
+
+
+>>>>OnLy First Time<<<<<
+Mac/Linux
+> open terminal
+> sudo npm i -g create-react-app 
+
+>>>>>Every Time when you want new app<<<<<<<<<<<<<
+> go inside the folder where you want to generate
+> create-react-app appname
+
+
+What is component
+we will create our firstcomponent
+
+///////////
+component     >>>>>Hooks
+
+functional          classComponent
+------------------------------------------
+dump component      logical component
+display data        to mange or call api
+light in weight     bit heavy
+cannot maintain     they can maintain state
+    state
+
+https://github.com/Aakashdeveloper/React_With_TypeScript/blob/master/webpack.config.js
+
+state props
+
+state act like a local variable
+    > state can be declered only inside class component
+props help to transfer data
+
+
+Component A      props          Component B
+data     >>>>>>>>>>>>>>>>>> data
+
+Component A       Props                   Component B
+(class)     >>>>>>>>>>>>>>>>>>>>>>>>>>>>  data from class                       
+data =>Api data
+data will save in state
+*****
+data can only transfer if component is nested
+
+tagname
+id
+classname
+
+var  a = 10
+
+a>10 ? "hii":"bie"
+"bie"
+var  a = 10
+
+a==10 ? "hii":"bie"
+"hii"
+var  a = 10
+
+a==10 ? a+1:a-1
+11
+
+pass data from parent => child (props)
+pass data from child => parent(function )
+
+
+function add(a){
+    return a+a
+}
+
+add(1,2)
+
+/////routing/////
+npm i react-router-dom
+
+///////////////////////////
+(get) hotels> https://developerfunnel.herokuapp.com/hotels
+(get) hotelwrtcity > https://developerfunnel.herokuapp.com/hotels?city=6
+(get) hoteldetails > https://developerfunnel.herokuapp.com/hotelsdetails/1
+(get) onbasisoftrip> https://developerfunnel.herokuapp.com/hotellist/1
+https://developerfunnel.herokuapp.com/hotellist/1?roomtype=1
+https://developerfunnel.herokuapp.com/hotellist/1?hcost=1000&lcost=500
+(get) cityname> https://developerfunnel.herokuapp.com/location
+(get)  rooms => https://developerfunnel.herokuapp.com/rooms
+(get)  triptype> https://developerfunnel.herokuapp.com/booking
+(get)  bookingdetails > https://developerfunnel.herokuapp.com/allBooking
+(post) placebooking >  https://developerfunnel.herokuapp.com/placeBook
+
+npm i react-router-dom react-tabs
+
+var a =10
+var b = "my age is"+a
+var c = `my age is ${a}`
+
+npm i -g create-react-app@14.12.3
