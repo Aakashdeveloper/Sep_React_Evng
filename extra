@@ -173,3 +173,22 @@ var b = "my age is"+a
 var c = `my age is ${a}`
 
 npm i -g create-react-app@14.12.3
+
+
+//Mount
+> Constructor
+> getDerivedStateFromProps()
+> componentWillMount()
+> render
+> componentDidMount
+
+//Update
+> getDerivedStateFromProps()
+> shouldComponentupdate()
+> componentWillUpdate()
+> render
+> componentDidUpdate
+
+
+//Unmount
+> componentWillUnmount
