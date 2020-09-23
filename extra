@@ -192,3 +192,9 @@ npm i -g create-react-app@14.12.3
 
 //Unmount
 > componentWillUnmount
+
+
+why redux
+> state mangement
+> folder structre
+> resuablity
