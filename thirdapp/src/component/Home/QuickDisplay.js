@@ -6,9 +6,9 @@ const QuickDisplay = (props) => {
 
     const listTrip = ({tripData}) => {
         if(tripData){
-            return tripData.map((item) => {
+            return tripData.map((item,index) => {
                 return(
-                    <Link to={`/list/${item.trip}`}>
+                    <Link to={`/list/${item.trip}`} key={index}>
                         <div className="tileContainer">
                             <div className="tileComponent1">
                                 <img src={item.image}/>

@@ -3,6 +3,30 @@ https://nodejs.org/en/
 https://github.com/
 https://github.com/Aakashdeveloper/Sep_React_Evng
 
+Basic JavaScript
+Npm
+React = 3
+React_hooks -1
+React-Redux =2
+Mock API
+json-server
+//////////////////
+React-GarphQL 1
+React-JWT(Login Logut)-1
+React-Saga -1
+Basic React Native=1
+Depolyment
+-> MERN
+Testing
+-> Docker
+-> Nginx
+
+Github
+--------NOT--------------
+API
+GarphQL
+Login/Logout
+
 
 React 
 ////////////////////////////
@@ -202,3 +226,6 @@ why redux
 npm i -g json-server
 
 json-server --watch db.json --port 8900
+
+
+npm i react-router-dom redux react-redux react-slick redux-logger redux-promise

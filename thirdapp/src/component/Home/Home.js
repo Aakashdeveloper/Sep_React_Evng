@@ -4,6 +4,7 @@ import QuickSearch from './QuickSearch';
 
 const Home = (props) => {
 
+    
     const handleHotel = (data) => {
         props.history.push(`/details/${data}`)
     }
@@ -13,6 +14,8 @@ const Home = (props) => {
             <QuickSearch/>
         </div>
     )
+
+
 }
 
 export default Home;

@@ -3,7 +3,7 @@ import axios from 'axios';
 import {Link} from 'react-router-dom';
 
 const hotelUrl = "https://developerfunnel.herokuapp.com/hotelsdetails";
-const bookingUrl = "https://developerfunnel.herokuapp.com/placeBook";
+const bookingUrl = "https://developerfunnel.herokuapp.com/placeBooking";
 
 class PlaceBooking extends Component{
     constructor(){
@@ -12,7 +12,7 @@ class PlaceBooking extends Component{
         this.state={
             order_id: Math.floor(Math.random()*10000),
             hotel_name:'',
-            name:'',
+            name:sessionStorage.getItem('username'),
             phone:'',
             address:'',
             person:''

@@ -35,9 +35,9 @@ class Search extends Component{
 
     renderCity= (data) =>{
         if(data){
-            return data.map((item) => {
+            return data.map((item,index) => {
                 return(
-                    <option  value={`${item.city},${item.city_name}`}>
+                    <option  value={`${item.city},${item.city_name}`} key={index}>
                         {item.city_name}
                     </option>
                 )
