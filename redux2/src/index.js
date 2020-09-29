@@ -7,5 +7,5 @@ import Routing from './component/Routing';
 ReactDOM.render(
     <Provider store={store}>
         <Routing/>
-    </Provider>,document.getElementById('root')
+    </Provider>, document.getElementById('root')
 )

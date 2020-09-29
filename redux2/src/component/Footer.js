@@ -2,12 +2,12 @@ import React from 'react';
 
 const Footer = () => {
     return(
-        <Footer>
+        <footer>
             <div>
                 <hr/>
                 &copy; Developer Funnel
             </div>
-        </Footer>
+        </footer>
     )
 }
 
