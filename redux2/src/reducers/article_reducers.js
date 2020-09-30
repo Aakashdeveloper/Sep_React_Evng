@@ -4,6 +4,10 @@ export default function(state={}, action){
             return {...state, latestNews:action.payload}
         case 'GET_ARTICLE':
             return {...state, articleNews:action.payload}
+        case 'SELECTED_NEWS':
+            return {...state, selected:action.payload}
+        case 'CLEAR_SELECTED_NEWS':
+             return {...state, selected:action.payload}
         default:
             return state
     }

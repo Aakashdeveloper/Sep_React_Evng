@@ -3,6 +3,8 @@ import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import {latestNews,articleNews,galleryNews} from '../actions';
 import LatestDisplay from '../component/Home/LatestDisplay';
+import ArticleDisplay from '../component/Home/ArticleDisplay';
+import GalleryDisplay from '../component/Home/GalleryDisplay';
 
 class Home extends Component{
     componentDidMount(){
@@ -13,7 +15,9 @@ class Home extends Component{
     render(){
         return(
             <React.Fragment>
-                <LatestDisplay/>
+                <LatestDisplay ldata={this.props.datalist.latestNews}/>
+                <ArticleDisplay adata={this.props.datalist.articleNews}/>
+                <GalleryDisplay gdata={this.props.gallist.galleryNews}/>
             </React.Fragment>
         )
     }
@@ -23,6 +27,7 @@ function mapStateToProps(state){
     console.log(state)
     return{
         datalist:state.article,
+        gallist:state.gallery
       
     }
 }
