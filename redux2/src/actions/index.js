@@ -47,3 +47,21 @@ export function claerSelectedNews(id){
         payload:[]
     }
 }
+
+
+export function handleLikes(array,id){
+    const output = fetch(`${base_url}/articles/${id}`,{
+        method:'PATCH',
+        headers:{
+            'Accept':'application/json',
+            'Content-Type':'application/json'
+        },
+        body:JSON.stringify({likes:array})
+    })
+    .then((data) => data.json())
+
+    return{
+        type:'HANDLE_LIKES',
+        payload:output
+    }
+}
