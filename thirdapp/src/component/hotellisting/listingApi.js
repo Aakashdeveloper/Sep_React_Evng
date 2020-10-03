@@ -7,12 +7,16 @@ import SuggestBlock from './SuggestBlock';
 
 const url = "https://developerfunnel.herokuapp.com/hotellist"
 
+var limit = 3;
+
 class Listing extends Component{
     constructor(){
         super()
 
         this.state={
-            hotellist:''
+            hotellist:'',
+            activePage: 1,
+            totalNoOfItems: 1,
         }
     }
 
@@ -30,7 +34,8 @@ class Listing extends Component{
                     </div>
                     <div className="col-md-10">
                         <SuggestBlock/>
-                        <ListingDisplay listData={this.state.hotellist} />
+                        <ListingDisplay listData={this.state.hotellist} activePage={this.state.activePage} limit={limit} totalNoOfItems={this.state.totalNoOfItems}
+                        pageNumber={(data) => { this.setState({ activePage: data }) }} />
                     </div>
                 </div>
             </div>
@@ -41,7 +46,15 @@ class Listing extends Component{
         var tripid = parseInt(this.props.match.params.id);
         sessionStorage.setItem('tripid',tripid);
         axios.get(`${url}/${tripid}`)
-        .then((response) => {this.setState({hotellist:response.data})})
+        fetch((`${url}/${tripid}`))
+        .then((res) => res.json())
+        .then((data) => {
+            console.log()
+            this.setState({
+                hotellist: data.slice(0, data.length - 1),
+                totalNoOfItems:data.length - 1
+            })
+        })
     }
 }
 

@@ -40,6 +40,7 @@ class NewsDetails extends Component{
                                 likes={data.likes[0]}
                                 dislikes={data.likes[1]}
                               />
+                              
                             </div>
                         </div>
                     </div>
