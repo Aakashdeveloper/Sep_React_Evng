@@ -249,3 +249,9 @@ npm i react-router-dom redux react-redux react-slick redux-logger redux-promise
 (GET) => http://localhost:5000/api/auth/userinfo
 (Header) => {'x-access-token':'token value from login'}
 (response) => {userinfo}
+
+
+npm i -g create-react-native-app
+npm i -g expo-cli
+
+> create-react-native-app appname
