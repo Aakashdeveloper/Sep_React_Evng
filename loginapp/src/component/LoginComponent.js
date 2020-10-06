@@ -35,7 +35,12 @@ class Login extends Component{
             },
             body:JSON.stringify(data)
           })
-          .then((this.props.history.push('/profile?message"loginSuccess"')))
+          .then((res) => res.json())
+          .then((data) => {
+            sessionStorage.setItem('ltk',data.token)
+            this.props.history.push('/profile?message"loginSuccess"')
+          })
+          
     }
 
     render(){

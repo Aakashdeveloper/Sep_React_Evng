@@ -10,9 +10,9 @@ React_hooks -1
 React-Redux =2
 Mock API
 json-server
-//////////////////
-React-GarphQL 1
 React-JWT(Login Logut)-1
+React-GarphQL 1
+//////////////////
 React-Saga -1
 Basic React Native=1
 Depolyment
@@ -255,3 +255,18 @@ npm i -g create-react-native-app
 npm i -g expo-cli
 
 > create-react-native-app appname
+
+https://github.com/Aakashdeveloper/Oauth-for-React-
+
+https://github.com/Aakashdeveloper/Sep_React_Evng/tree/master/thirdapp
+
+
+{
+  product(id:3){
+    name
+    rating_text
+    min_price
+  }
+}
+
+npm i apollo-boost apollo-graphql graphql graphql-tag react-apollo
