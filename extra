@@ -12,16 +12,18 @@ Mock API
 json-server
 React-JWT(Login Logut)-1
 React-GarphQL 1
-//////////////////
-React-Saga -1
 Basic React Native=1
 Depolyment
 -> MERN
+-> Heroku
+Github
+//////////////////
+React-Saga -1
 Testing
 -> Docker
 -> Nginx
 
-Github
+
 --------NOT--------------
 API
 GarphQL
@@ -255,6 +257,9 @@ npm i -g create-react-native-app
 npm i -g expo-cli
 
 > create-react-native-app appname
+cd appname
+> npm run web 
+
 
 https://github.com/Aakashdeveloper/Oauth-for-React-
 
@@ -270,3 +275,17 @@ https://github.com/Aakashdeveloper/Sep_React_Evng/tree/master/thirdapp
 }
 
 npm i apollo-boost apollo-graphql graphql graphql-tag react-apollo
+
+https://reactnative.dev/docs/getting-started
+
+>>>>First time from new folder<<<<<<
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/testreact.git
+git push -u origin master
+                
+>>>>Next All Time<<<<
+git add .
+git commit -m "first commit"
+git push
