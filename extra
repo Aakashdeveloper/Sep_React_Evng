@@ -17,7 +17,6 @@ Depolyment
 -> MERN
 -> Heroku
 Github
-//////////////////
 React-Saga -1
 Testing
 -> Docker
@@ -289,3 +288,33 @@ git push -u origin master
 git add .
 git commit -m "first commit"
 git push
+
+docker build . -t imagename
+docker run -p 8970:3000 imagename
+
+function loop(userinput){
+    for(i=0;i<userinput;i++){
+        console.log(i)
+    }
+}
+
+function * loop(userinput){
+    for(i=0;i<userinput;i++){
+       yield i
+    }
+}
+
+var data = loop(3)
+undefined
+data.next()
+{value: 0, done: false}
+data.next()
+{value: 1, done: false}
+data.next()
+{value: 2, done: false}
+data.next()
+{value: undefined, done: true}
+data.next()
+{value: undefined, done: true}
+
+npm i enzyme-adapter-react-16 react-addons-test-utils react-test-renderer
