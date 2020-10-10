@@ -1,12 +1,23 @@
 import React,{Component} from 'react';
-import {connect} from 'react-redux';
-import PropTypes from 'prop-types';
-import {latestNews,articleNews,galleryNews} from '../actions';
-import LatestDisplay from '../component/Home/LatestDisplay';
-import ArticleDisplay from '../component/Home/ArticleDisplay';
-import GalleryDisplay from '../component/Home/GalleryDisplay';
+import BaseButton from '../component/BaseButton';
 
 class Home extends Component{
+    
+    render(){
+        return(
+            <React.Fragment>
+               <p>Home Page</p>
+               <BaseButton/>
+            </React.Fragment>
+        )
+    }
+}
+
+
+export default Home;
+
+
+/*class Home extends Component{
     componentDidMount(){
         this.props.dispatch(latestNews());
         this.props.dispatch(articleNews());
@@ -37,3 +48,4 @@ Home.protoTypes={
 }
 
 export default connect(mapStateToProps)(Home)
+*/
